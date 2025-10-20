@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+// Custom SCSS variables and mixins
+$primary-color: #646cff;
+$secondary-color: #24c8db;
+$dark-bg: #2f2f2f;
+$light-bg: #f6f6f6;
+
+@mixin responsive-font {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin button-hover {
+  border-color: #396cd8;
+  transition: border-color 0.25s;
+
+  &:active {
+    border-color: #396cd8;
+    background-color: #e8e8e8;
+  }
+}
